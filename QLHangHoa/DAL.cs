@@ -21,6 +21,7 @@ namespace QLHangHoa3Layers
             adapter.Fill(dt);
             return dt;
         }
+        //abcdddd
         public void ExecuteNonQuery(String sql)
         {
             SqlConnection con = GetConnect();
