@@ -12,6 +12,7 @@ namespace QLHangHoa3Layers
             SqlConnection conn = new SqlConnection(connString);
             return conn;
         }
+        //demo update file
         public DataTable GetTable(String sql)
         {
             SqlConnection con = GetConnect();
@@ -20,6 +21,7 @@ namespace QLHangHoa3Layers
             adapter.Fill(dt);
             return dt;
         }
+        //abcdddd
         public void ExecuteNonQuery(String sql)
         {
             SqlConnection con = GetConnect();
@@ -27,5 +29,6 @@ namespace QLHangHoa3Layers
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.ExecuteNonQuery();
         }
+        
     }
 }
